@@ -305,10 +305,12 @@ h6 {
   font-weight: bold;
 }
 .fbs__net-navbar .navbar-brand .logo.dark {
-  display: none;
+  display: block;
+  width: 140px;
 }
 .fbs__net-navbar .navbar-brand .logo.light {
   display: block;
+  width: 140px;
 }
 .fbs__net-navbar .navbar-nav > li > .nav-link {
   position: relative;
