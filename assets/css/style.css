@@ -658,10 +658,12 @@ h6 {
 }
 .fbs__net-navbar.dark .navbar-brand .logo.dark {
   display: block;
+  width: 140px;
 }
 
 .fbs__net-navbar.dark .navbar-brand .logo.light {
   display: none;
+  width: 140px;
 }
 
 .fbs__net-navbar.dark a {
