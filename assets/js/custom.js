@@ -389,7 +389,9 @@ const aosInit = () => {
   AOS.init({
     duration: 800,
     easing: 'slide',
-    once: true
+    once: true,
+    offset: 0,
+    anchorPlacement: 'top-bottom'
   });
 }
 document.addEventListener("DOMContentLoaded", aosInit);
