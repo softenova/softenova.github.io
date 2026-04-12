@@ -421,7 +421,7 @@ h6 {
   height: 50px;
   border-radius: 50%;
   position: relative;
-  background-color: var(--bs-black);
+  background-color: var(--bs-primary);
   color: var(--bs-white);
   border: none;
   display: none;
