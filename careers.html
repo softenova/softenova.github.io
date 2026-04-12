@@ -10,7 +10,7 @@ License: https://freebootstrap.net/license
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/logo/softenova_favicon.png">
-    <title>Careers - Softenova Limited</title>
+    <title> Softenova Limited </title>
      
     <!-- ======= Google Font =======-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +32,7 @@ License: https://freebootstrap.net/license
     
     <!-- ======= Apply theme =======-->
     <script>
+      // Apply the theme as early as possible to avoid flicker
       (function() {
       const storedTheme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-bs-theme', storedTheme);
@@ -39,30 +40,38 @@ License: https://freebootstrap.net/license
     </script>
   </head>
   <body>
-    <!-- ======= Header =======-->
-    <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
-      <div class="container d-flex align-items-center justify-content-between">
-        <!-- Start Logo-->
-        <a class="navbar-brand w-auto" href="index.html">
-          <img class="logo dark img-fluid" src="assets/images/logo/softenova_full_transparent.png" alt="Softenova"> 
-          <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="Softenova">
-        </a>
-        <!-- End Logo-->
-        <!-- Start offcanvas-->
-        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
-          <div class="offcanvas-header">
-            <div class="offcanvas-header-logo">
-              <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
-                <img class="logo dark img-fluid" src="assets/images/logo/softenova_full_transparent.png" alt="Softenova"> 
-                <img class="logo light img-fluid" src="assets/images/logo/softenova_white.png" alt="Softenova"></a>
+    <!-- ======= Site Wrap =======-->
+    <div class="site-wrap">
+      <!-- ======= Header =======-->
+      <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+          <!-- Start Logo-->
+          <a class="navbar-brand w-auto" href="index.html">
+            <!-- If you use a text logo, uncomment this if it is commented-->
+            <!-- Vertex--> 
+            <!-- If you plan to use an image logo, uncomment this if it is commented-->
+            <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo/softenova_full_transparent.png" alt="FreeBootstrap.net image placeholder"> 
+            <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="FreeBootstrap.net image placeholder">
+            </a>
+          <!-- End Logo-->
+          <!-- Start offcanvas-->
+          <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+            <div class="offcanvas-header">
+              <div class="offcanvas-header-logo">
+                <!-- If you use a text logo, uncomment this if it is commented-->
+                <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
+                <!-- If you plan to use an image logo, uncomment this if it is commented-->
+                <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+                  <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo/softenova_full_transparent.png" alt="FreeBootstrap.net image placeholder"> 
+                  <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo/softenova_white.png" alt="FreeBootstrap.net image placeholder"></a>
+              </div>
+              <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          
-          <div class="offcanvas-body align-items-lg-center">
-            <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+            
+            <div class="offcanvas-body align-items-lg-center">
+              <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="index.html#services" data-bs-toggle="dropdown" aria-expanded="false">Services <i class="bi bi-chevron-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item dropstart"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Software Development <i class="bi bi-chevron-right"></i></a>
@@ -85,33 +94,30 @@ License: https://freebootstrap.net/license
                   </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="careers.html">Career</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-            </ul>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End offcanvas-->
+          
+          <div class="ms-auto w-auto">
+            <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2" href="https://wa.me/8801521734190?text=Hi%21%20I%27d%20like%20to%20schedule%20a%20call.%20Please%20let%20me%20know%20your%20available%20time%20slots." target="_blank">Schedule a Call</a>
+              <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="21" x2="3" y1="6" y2="6"></line>
+                  <line x1="15" x2="3" y1="12" y2="12"></line>
+                  <line x1="17" x2="3" y1="18" y2="18"></line>
+                </svg>
+                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
-        <!-- End offcanvas-->
-        
-        <div class="ms-auto w-auto">
-          <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2" href="https://wa.me/8801521734190?text=Hi%21%20I%27d%20like%20to%20schedule%20a%20call.%20Please%20let%20me%20know%20your%20available%20time%20slots." target="_blank">Schedule a Call</a>
-            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
-              <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="21" x2="3" y1="6" y2="6"></line>
-                <line x1="15" x2="3" y1="12" y2="12"></line>
-                <line x1="17" x2="3" y1="18" y2="18"></line>
-              </svg>
-              <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 6 6 18"></path>
-                <path d="m6 6 12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- End Header-->
-    
-    <!-- ======= Site Wrap =======-->
-    <div class="site-wrap">
+      </header>
+      <!-- End Header-->
       
       <!-- ======= Main =======-->
       <main>
@@ -379,13 +385,32 @@ License: https://freebootstrap.net/license
         
       </main>
       <!-- End Main-->
+
     </div>
-    <!-- End Site Wrap-->
     
-    <!-- ======= Scripts =======-->
+    <!-- ======= Floating WhatsApp Button =======-->
+    <a href="https://wa.me/8801521734190?text=Hey%21%20I%20am%20interested%20in%20Softenova.%20Can%20we%20talk%3F" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <!-- End Floating WhatsApp Button-->
+    
+    <!-- ======= Back to Top =======-->
+    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+    <!-- End Back to top-->
+    
+    <!-- ======= Javascripts =======-->
     <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- End Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="assets/js/send_email.js"></script>
+    <!-- <script src="assets/js/send_message.js"></script> -->
+    <!-- End JavaScripts-->
   </body>
 </html>
